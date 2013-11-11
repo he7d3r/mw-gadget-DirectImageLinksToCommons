@@ -18,7 +18,7 @@ if ( mw.config.get( 'wgNamespaceNumber', 0 ) >= 0 ) {
 		var     commonsBase = mw.config.get( 'wgServer' ) === "https://secure.wikimedia.org"
 				? '/wikipedia/commons/wiki/File:'
 				: '//commons.wikimedia.org/wiki/File:',
-			localBase = mw.util.wikiGetlink( mw.config.get( 'wgFormattedNamespaces' )['6'] + ':' ),
+			localBase = mw.util.getUrl( mw.config.get( 'wgFormattedNamespaces' )['6'] + ':' ),
 			uploadBaseRe = new RegExp( '^' + $.escapeRE( '//upload.wikimedia.org/wikipedia/commons/' ) );
 		/*jslint unparam:true*/
 		$( 'a.image' ).attr( 'href', function( i, currVal ) {
