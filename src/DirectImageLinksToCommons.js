@@ -4,7 +4,6 @@
  * @source: http://www.mediawiki.org/wiki/Snippets/Direct_imagelinks_to_Commons
  * @author: [[commons:User:Krinkle]]
  * @rev: 4
- * @tracking: [[Special:GlobalUsage/User:Helder.wiki/Tools/Direct imagelinks to Commons.js]] ([[File:User:Helder.wiki/Tools/Direct imagelinks to Commons.js]])
  */
 /*jslint browser: true, white: true*/
 /*global jQuery, mediaWiki */
