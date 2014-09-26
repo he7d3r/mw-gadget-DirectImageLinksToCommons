@@ -5,8 +5,6 @@
  * @author: [[commons:User:Krinkle]]
  * @rev: 4
  */
-/*jslint browser: true, white: true*/
-/*global jQuery, mediaWiki */
 ( function ( mw, $ ) {
 'use strict';
 
@@ -19,13 +17,13 @@ if ( mw.config.get( 'wgNamespaceNumber', 0 ) >= 0 ) {
 				: '//commons.wikimedia.org/wiki/File:',
 			localBase = mw.util.getUrl( mw.config.get( 'wgFormattedNamespaces' )['6'] + ':' ),
 			uploadBaseRe = new RegExp( '^' + $.escapeRE( '//upload.wikimedia.org/wikipedia/commons/' ) );
-		/*jslint unparam:true*/
+		/*jshint unused:false */
 		$( 'a.image' ).attr( 'href', function( i, currVal ) {
 			if ( uploadBaseRe.test( $(this).find( 'img' ).attr( 'src' ) ) ) {
 				return currVal.replace( localBase, commonsBase );
 			}
 		});
-		/*jslint unparam:false*/
+		/*jshint unused:true */
 	});
 }
 
